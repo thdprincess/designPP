@@ -2,9 +2,7 @@ $(function () {
   $('#fullpage').fullpage({
     navigation: true,
     autoScrolling: true,
-    anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
     responsiveWidth: 900,
-    // css3: true,
     scrollingSpeed: 1000,
     afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
@@ -54,16 +52,15 @@ $(function () {
   }
 
   // hamburger
-  $('.nav-icon').click(function () {
+  $('.nav-icon').on('click',function () {
     $(this).toggleClass('open');
     $(".sidenav").toggleClass('full');
     $(".itemMenu").toggleClass('appear');
   });
-  $('.itemMenu').click(function () {
+  $('.itemMenu').on('click',function () {
     $('.nav-icon').toggleClass('open');
     $(".sidenav").toggleClass('full');
     $(".itemMenu").toggleClass('full');
     $(".itemMenu").toggleClass('appear');
   });
-
 });
