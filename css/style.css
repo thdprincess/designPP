@@ -1,0 +1,296 @@
+.section {
+  position: relative;
+}
+
+#section1 {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section2 {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(../img/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section3 {
+  overflow: hidden;
+  background-image: url(../img/3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section4 {
+  overflow: hidden;
+  background-image: url(../img/4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section5 {
+  overflow: hidden;
+  background-image: url(../img/5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section6 {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url(../img/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section7 {
+  overflow: hidden;
+  background-image: url(../img/7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section8 {
+  overflow: hidden;
+  background-image: url(../img/8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section9 {
+  overflow: hidden;
+  background-image: url(../img/9.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+#section10 {
+  overflow: hidden;
+  background-image: url(../img/10.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+
+#fullpage {
+  transition: 0.8s;
+}
+
+
+
+/************ ICON HAMBURGER *************/
+
+.nav-icon {
+  width: 60px;
+  height: 45px;
+  position: fixed;
+  top: 35px;
+  right: 0%;
+  z-index: 9999999;
+  /*margin: 50px auto;*/
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  -moz-transform: rotate(0deg) translateX(-50%);
+  -o-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 60px;
+  background: #000;
+  border-radius: 9px;
+  opacity: 0.4;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 16px;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 32px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 16px;
+  opacity: 1;
+  background-color: #fff;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.nav-icon.open span:nth-child(3) {
+  top: 16px;
+  opacity: 1;
+  background-color: #fff;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+#coverIcon {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+}
+
+/************ SIDE MENU*************/
+
+.sidenav {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ecf0f1;
+  overflow: hidden;
+  visibility: hidden;
+  transition-property: visibility, top, opacity, background-color, height, width;
+  transition-duration: 0s, 0.2s, 0.3s, 0.1s, 0.8s, 0.8s;
+  transition-delay: 0s, 0s, 0s, 0.25s, 0.25s, 0.25s;
+  transition-timing-function: linear, ease-out, linear, linear, cubic-bezier(1.000, -0.130, 0.000, 0.810), cubic-bezier(1.000, -0.130, 0.000, 0.810);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.sidenav.full {
+  visibility: visible;
+  background-color: black;
+  top: 50%;
+  height: 3000px;
+  width: 3000px;
+  opacity: 0.85;
+  z-index: 11;
+}
+
+.menuItems {
+  margin-top: 40%;
+  margin-bottom: 50px;
+  font-size: 50px;
+  line-height: 150px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.menuItems li a {
+  text-decoration: none;
+}
+
+.menuItems li a:hover {
+  color: #fff;
+}
+
+.itemMenu {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+}
+
+.itemMenu:first-child.appear {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition-delay: 0.9s;
+}
+
+.itemMenu:nth-child(2).appear {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition-delay: 1s;
+}
+
+.itemMenu:nth-child(3).appear {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition-delay: 1.1s;
+}
+
+.itemMenu:last-child.appear {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition-delay: 1.4s;
+}
+
+.btnPlus {
+  height: 30px;
+  width: 90px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  right: 10vw;
+  transform: translateY(-50%) translateX(-2px) rotate(90deg);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.titlePost {
+  opacity: 0;
+}
+
+.titlePost.visible {
+  opacity: 1;
+}
+
+.numTitle {
+  opacity: 0;
+}
+
+.numTitle.visible {
+  opacity: 1;
+}
